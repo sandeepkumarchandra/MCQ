@@ -1,0 +1,14 @@
+<p>Home</p>
+Select Skill: 
+
+<select [(ngModel)]="selectedSkill">
+  <option value="" disabled>Select an Skill</option>
+  <option *ngFor="let opt of skillOptions" [value]="opt">
+    {{ opt }}
+  </option>
+</select>
+
+
+<button type="button" (click)="goToQuestions()" [disabled]="!selectedSkill">
+  Go to Questions
+</button>

@@ -1,0 +1,116 @@
+<div class="top-bar">
+<p class="skill-text">Skill: {{selectedSkill}}</p>
+
+<div class="question-selector">
+  <label for="qSelect">Go to question:</label>
+
+  <select
+    id="qSelect"
+    [value]="currentIndex()"
+    (change)="goToIndex($any($event.target).value)"
+  >
+    <option
+      *ngFor="let q of questions; let i = index"
+      [value]="i"
+    >
+      Question {{ i + 1 }}
+    </option>
+  </select>
+  @for(num of arr; track num) {
+    {{num}}
+  }
+  @empty {
+    {{'Array Empty'}}
+  }
+</div>
+</div>
+
+<div class="question-container" *ngIf="currentQuestion as q">
+
+  <div class="question-header">
+    <span class="q-index">
+      Question {{ currentIndex() + 1 }} / {{ questions.length }}
+    </span>
+    <span class="difficulty">{{ q.difficulty }}</span>
+  </div>
+
+  <h2 class="question-text">
+    {{ q.questionText }}
+  </h2>
+
+<div class="answers">
+  <ng-container *ngFor="let a of q.answers">
+    <!-- MULTI-SELECT -->
+    <label
+      *ngIf="q.allowMultiple; else singleSelect"
+      class="answer checkbox"
+      [class.selected]="isSelected(a.answerId)"
+      [class.correct]="isCorrect(a)"
+      [class.wrong]="isWrong(a)"
+    >
+      <input
+        type="checkbox"
+        [checked]="isSelected(a.answerId)"
+        (change)="toggleAnswer(a, $event)"
+        [disabled]="checked"
+      />
+
+      <span class="label">{{ a.choiceLabel }}</span>
+      <span>{{ a.answerText }}</span>
+    </label>
+
+    <!-- SINGLE-SELECT -->
+    <ng-template #singleSelect>
+      <button
+        type="button"
+        class="answer"
+        [class.selected]="a.answerId === selectedAnswerId"
+        [class.correct]="isCorrect(a)"
+        [class.wrong]="isWrong(a)"
+        (click)="selectAnswer(a)"
+        [disabled]="checked"
+      >
+        <span class="label">{{ a.choiceLabel }}</span>
+        <span>{{ a.answerText }}</span>
+      </button>
+    </ng-template>
+  </ng-container>
+</div>
+
+<div *ngIf="checked && isPartialCorrect()"  style="color: rgb(184, 72, 72);">
+  <h3>Partial Correct</h3>
+</div>
+
+  <div class="actions">
+    <button (click)="previous()" [disabled]="currentIndex() === 0">
+      Previous
+    </button>
+
+    <button
+      class="check"
+      (click)="isSelectedAnswerCorrect()"
+      [disabled]="checked || (q.allowMultiple ? selectedAnswerIds.size === 0 : selectedAnswerId === null)"
+    >
+      Check
+    </button>
+
+    <button class="retry" (click)="retry()" [disabled]="!checked">
+      Retry
+    </button>
+
+    <button
+      (click)="next()"
+      [disabled]="currentIndex() === questions.length - 1"
+    >
+      Next
+    </button>
+  </div>
+
+<div class="explanation-box" *ngIf="checked && this.isAnswerCorrect && q.explanation">
+  <h3>Explanation</h3>
+  <p class="explanation-text">
+    {{ q.explanation }}
+  </p>
+</div>
+
+</div>
