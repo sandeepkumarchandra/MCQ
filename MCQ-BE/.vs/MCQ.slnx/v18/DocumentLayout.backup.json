@@ -1,0 +1,148 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|c:\\users\\sandeep\\source\\repos\\mcq\\repositories\\questionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|solutionrelative:repositories\\questionsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|c:\\users\\sandeep\\source\\repos\\mcq\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|solutionrelative:models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|c:\\users\\sandeep\\source\\repos\\mcq\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|c:\\users\\sandeep\\source\\repos\\mcq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|c:\\users\\sandeep\\source\\repos\\mcq\\data\\mcqcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|solutionrelative:data\\mcqcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|c:\\users\\sandeep\\source\\repos\\mcq\\controllers\\mcqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|solutionrelative:controllers\\mcqcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|c:\\users\\sandeep\\source\\repos\\mcq\\models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{473E2FF4-579D-8596-D718-430E3B308363}|MCQ.csproj|solutionrelative:models\\answer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\10819487\\source\\repos\\MCQ\\MCQ.Test\\TestHelpers\\MockData.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "McqContext.cs",
+              "DocumentMoniker": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Data\\McqContext.cs",
+              "RelativeDocumentMoniker": "Data\\McqContext.cs",
+              "ToolTip": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Data\\McqContext.cs",
+              "RelativeToolTip": "Data\\McqContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-21T02:31:31.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-20T17:22:42.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-20T17:14:15.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "QuestionsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Repositories\\QuestionsRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\QuestionsRepository.cs",
+              "ToolTip": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Repositories\\QuestionsRepository.cs",
+              "RelativeToolTip": "Repositories\\QuestionsRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAIA0wBoAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T09:20:10.066Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MockData.cs",
+              "DocumentMoniker": "C:\\Users\\10819487\\source\\repos\\MCQ\\MCQ.Test\\TestHelpers\\MockData.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\10819487\\source\\repos\\MCQ\\MCQ.Test\\TestHelpers\\MockData.cs",
+              "ToolTip": "C:\\Users\\10819487\\source\\repos\\MCQ\\MCQ.Test\\TestHelpers\\MockData.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\10819487\\source\\repos\\MCQ\\MCQ.Test\\TestHelpers\\MockData.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-06T05:01:58.238Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Question.cs",
+              "DocumentMoniker": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Models\\Question.cs",
+              "RelativeDocumentMoniker": "Models\\Question.cs",
+              "ToolTip": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Models\\Question.cs",
+              "RelativeToolTip": "Models\\Question.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAIwB0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T05:38:36.705Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Answer.cs",
+              "DocumentMoniker": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Models\\Answer.cs",
+              "RelativeDocumentMoniker": "Models\\Answer.cs",
+              "ToolTip": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Models\\Answer.cs",
+              "RelativeToolTip": "Models\\Answer.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAIwBgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T03:07:47.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MCQController.cs",
+              "DocumentMoniker": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Controllers\\MCQController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MCQController.cs",
+              "ToolTip": "C:\\Users\\Sandeep\\source\\repos\\MCQ\\Controllers\\MCQController.cs",
+              "RelativeToolTip": "Controllers\\MCQController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T04:13:21.944Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

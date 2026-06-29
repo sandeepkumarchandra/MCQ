@@ -1,0 +1,207 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "MCQ",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/MCQ/GetAllQuestionsBySkill/{skill}": {
+      "get": {
+        "tags": [
+          "MCQ"
+        ],
+        "parameters": [
+          {
+            "name": "skill",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Question"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Question"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Question"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/MCQ/{questionId}": {
+      "put": {
+        "tags": [
+          "MCQ"
+        ],
+        "parameters": [
+          {
+            "name": "QuestionId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateQuestionDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateQuestionDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateQuestionDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Answer": {
+        "required": [
+          "answerText",
+          "questionId"
+        ],
+        "type": "object",
+        "properties": {
+          "answerId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "questionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "answerText": {
+            "maxLength": 2000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "choiceLabel": {
+            "maxLength": 10,
+            "type": "string",
+            "nullable": true
+          },
+          "displayOrder": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isCorrect": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Question": {
+        "required": [
+          "questionText"
+        ],
+        "type": "object",
+        "properties": {
+          "questionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "questionText": {
+            "maxLength": 2000,
+            "minLength": 1,
+            "type": "string"
+          },
+          "allowMultiple": {
+            "type": "boolean"
+          },
+          "category": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "subCategory": {
+            "maxLength": 200,
+            "type": "string",
+            "nullable": true
+          },
+          "difficulty": {
+            "maxLength": 50,
+            "type": "string",
+            "nullable": true
+          },
+          "explanation": {
+            "maxLength": 4000,
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "answers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Answer"
+            },
+            "nullable": true
+          },
+          "isAnswerCorrect": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateQuestionDto": {
+        "type": "object",
+        "properties": {
+          "isAnswerCorrect": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "MCQ"
+    }
+  ]
+}

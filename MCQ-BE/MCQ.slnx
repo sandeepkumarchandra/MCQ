@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="../MCQ.Test/MCQ.Test.csproj" Id="ec34d36e-8d5f-4216-a9ff-508c06375232" />
+  <Project Path="MCQ.csproj" />
+</Solution>
